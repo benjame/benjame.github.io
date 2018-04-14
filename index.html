@@ -147,6 +147,108 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-LaptopEnvironment" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/14/LaptopEnvironment/">My MacBookPro Environment</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/14/LaptopEnvironment/" class="archive-article-date">
+  	<time datetime="2018-04-14T09:37:58.052Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="My-MacBookPro-Environment"><a href="#My-MacBookPro-Environment" class="headerlink" title="My MacBookPro Environment"></a>My MacBookPro Environment</h1><h2 id="操作系统与C-C-编译相关"><a href="#操作系统与C-C-编译相关" class="headerlink" title="操作系统与C/C++编译相关"></a>操作系统与C/C++编译相关</h2><ul>
+<li>Tsinghua Mooc OS 实验环境</li>
+</ul>
+<p>本机上分别安装了<code>Homebrew</code>与<code>Macports</code>安装包管理工具。</p>
+<p>为了安装<code>i386-elf-gcc</code>，尝试过使用homebrew结合<code>brew tap</code>第三方软件源安装，失败</p>
+<p>–执行github上的ruby脚本出错。</p>
+<blockquote>
+<p>先安装<code>i386-elf-gdb</code>，dependancy依赖需要安装<code>gcc49, i386-elf-binutils, mpfr, libmpc, i386-elf-gcc</code>，当安装到<code>i386-elf-gcc</code>时，还是出了问题。</p>
+<p>Issue: ruby脚本有错误</p>
+</blockquote>
+<p>改为使用<code>Macports</code>安装，<code>Macports</code>会把软件安装到<code>/opt/local</code>下。</p>
+<blockquote>
+<p>安装了这些依赖：</p>
+<p>gettext gmp i386-elf-binutils libiconv libmpc mpfr ncurses zlib </p>
+</blockquote>
+<p><del>为了以后方便使用在<code>/usr/local/bin</code>中创建一些符号链接，以下是创建的符号链接</del></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -s /opt/local/bin/i386-elf-gcc /usr/local/bin/gcc-i386</span><br><span class="line">ln -s /opt/local/bin/i386-elf-g++ /usr/local/bin/g++-i386</span><br></pre></td></tr></table></figure>
+<p><u>以上全部删掉，放弃在macOS上实验了</u></p>
+<p><strong>全力在虚拟机中完成实验</strong></p>
+<ul>
+<li><p><code>Homebrew</code>会安装软件到<code>/usr/local/bin</code>中</p>
+</li>
+<li><p><code>Macports</code>会安装软件到<code>/opt/local</code>中</p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">开发环境</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/14/LaptopEnvironment/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-ucore-record" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -202,11 +304,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ucore</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ucore</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -283,11 +385,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ucore</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ucore</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -516,11 +618,15 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">ucore</a>
+                <a href="javascript:void(0)" class="js-tag color5">操作系统</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">操作系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">开发环境</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">ucore</a>
               </li>
              
               <li class="article-tag-list-item">
